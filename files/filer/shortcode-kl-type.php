@@ -47,17 +47,24 @@ if ( $loop->have_posts() ) {
             echo '<div class="fil">';
                 $file = get_field('Fil');
                 if( $file ) {
-                    echo '<a href="' . $file['url'] . '" target="_blank">' . get_the_title() . '</a>';
+                    echo '<h4 class="fil-title"><a href="' . $file['url'] . '" target="_blank">' . get_the_title() . '</a></h4>';
                 } else {
-                    echo get_the_title() . ' - <em>fil mangler!</em>';
+                    echo '<h4 class="fil-title">' . get_the_title() . '</h4>';
                 }
                 $note = get_field('bemaerkning');
                 if ( $note ) {
-                    echo '<span class="note"><em>' . $note . '</em></span>';
+                    echo '<div class="note"><em>' . $note . '</em></div>';
                 }
 
-            edit_post_link( __( 'edit', 'skolehjemmesider-domain' ), '<span>', '</span>' );
-            echo '</div>';
+             $info = get_field('beskrivelse');
+                if ( $note ) {
+                    echo '<div class="info">' . $info . '</div>';
+                }
+            
+
+            edit_post_link( __( 'edit', 'skolehjemmesider-domain' ), '<div class="edit">', '</div>' );
+
+           echo '</div>';
 
         endwhile; wp_reset_query();
     echo '</div>';
