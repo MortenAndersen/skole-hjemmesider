@@ -10,7 +10,6 @@ function kl_type($atts) {
 
             'kl' => '3kl',
             'type' => 'plan',
-
         ), 
     $atts));
 
