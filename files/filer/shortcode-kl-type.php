@@ -57,7 +57,7 @@ if ( $loop->have_posts() ) {
                 }
 
              $info = get_field('beskrivelse');
-                if ( $note ) {
+                if ( $info ) {
                     echo '<div class="info">' . $info . '</div>';
                 }
             
