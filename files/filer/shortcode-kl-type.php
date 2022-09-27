@@ -47,9 +47,9 @@ if ( $loop->have_posts() ) {
             echo '<div class="fil">';
                 $file = get_field('Fil');
                 if( $file ) {
-                    echo '<h4 class="fil-title"><a href="' . $file['url'] . '" target="_blank">' . get_the_title() . '</a></h4>';
+                    echo '<div class="fil-title"><a href="' . $file['url'] . '" target="_blank">' . get_the_title() . '</a></div>';
                 } else {
-                    echo '<h4 class="fil-title">' . get_the_title() . '</h4>';
+                    echo '<div class="fil-title">' . get_the_title() . '</div>';
                 }
                 $note = get_field('bemaerkning');
                 if ( $note ) {
