@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "33081",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/css/skole-hjemmesider.css": {
 		"aP": 1,
 		"bl": 0,
@@ -51,12 +59,12 @@
 		"oAP": "/files/begivenheder/type.php",
 		"oF": 0
 		},
-	"/files/filer/array-txt.txt": {
+	"/files/filer/acf.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/files/filer/array-txt.txt",
+		"oAP": "/files/filer/acf.php",
 		"oF": 0
 		},
 	"/files/filer/functions.php": {
@@ -81,6 +89,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/files/filer/shortcode-alle-klasse.php",
+		"oF": 0
+		},
+	"/files/filer/shortcode-kl-type.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/filer/shortcode-kl-type.php",
 		"oF": 0
 		},
 	"/files/filer/shortcode-test.php": {

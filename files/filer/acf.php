@@ -24,6 +24,25 @@ acf_add_local_field_group(array(
 			'max_size' => '',
 			'mime_types' => '',
 		),
+		array(
+			'key' => 'field_6332d91c0f371',
+			'label' => 'Bemærkning',
+			'name' => 'bemaerkning',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
 	),
 	'location' => array(
 		array(

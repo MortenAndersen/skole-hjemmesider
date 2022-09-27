@@ -41,7 +41,7 @@ function kl_type($atts) {
 
 if ( $loop->have_posts() ) {
     
-    echo '<div class="aarsplaner grid g-d-4 gap-1">';
+    echo '<div class="aarsplaner">';
        while ( $loop->have_posts() ) : $loop->the_post(); 
 
             echo '<div class="fil">';
@@ -49,10 +49,14 @@ if ( $loop->have_posts() ) {
                 if( $file ) {
                     echo '<a href="' . $file['url'] . '" target="_blank">' . get_the_title() . '</a>';
                 } else {
-                    echo '<p>' . get_the_title() . '<br />- <em>Fil skal indsættes!</em></p>';
+                    echo get_the_title() . ' - <em>fil mangler!</em>';
+                }
+                $note = get_field('bemaerkning');
+                if ( $note ) {
+                    echo '<span class="note"><em>' . $note . '</em></span>';
                 }
 
-            edit_post_link( __( 'edit', 'skolehjemmesider-domain' ), '<p>', '</p>' );
+            edit_post_link( __( 'edit', 'skolehjemmesider-domain' ), '<span>', '</span>' );
             echo '</div>';
 
         endwhile; wp_reset_query();
