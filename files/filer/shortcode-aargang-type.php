@@ -1,13 +1,13 @@
 <?php
-add_shortcode('kl-type', 'kl_type');
-function kl_type($atts) {
+add_shortcode('aargang-type', 'aargang_type');
+function aargang_type($atts) {
   
     global $post;
     ob_start();
 
     extract(shortcode_atts(
         array(
-            'kl' => '',
+            'aargang' => '',
             'type' => '',
         ), 
     $atts));
@@ -22,9 +22,9 @@ function kl_type($atts) {
         'tax_query' => array(
             'relation'      => 'AND',
             array(
-                'taxonomy' => 'klasser',
+                'taxonomy' => 'aargang',
                 'field' => 'slug',
-                'terms' => $kl,
+                'terms' => $aargang,
                 'operator' => 'IN'
             ),
             array(

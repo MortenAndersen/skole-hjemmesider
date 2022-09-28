@@ -8,10 +8,8 @@
 @media (min-width: 700px) {
 
  .fil {
-	grid-template: 
-		"a b"
-		"c d"
-		"e f";
+
+	grid-template-columns: auto 30%;
 
 }
 .fil:nth-child(even) {
@@ -21,17 +19,14 @@
 	grid-area: a;
 }
 .fil .note {
-	font-size: .85rem;
-	grid-area: b;
+	font-size: .85rem;	
 }
 
-.fil .info {
+.fil .info p {
+	margin: .5rem 0;
+	
+}
 
-	grid-area: c;
-}
-.fil .edit {
-	grid-area: f;
-}
 
 
 }

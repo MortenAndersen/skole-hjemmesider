@@ -24,7 +24,9 @@ if( class_exists('ACF') ) {
 	// Filer
 	require_once ('files/filer/posttype.php');
 	require_once ('files/filer/acf.php');
+	require_once ('files/filer/function.php');
 	require_once ('files/filer/shortcode-kl-type.php');
+	require_once ('files/filer/shortcode-aargang-type.php');
 	require_once ('files/filer/shortcode-alle-klasse.php');
 
 	// Personale
@@ -45,6 +47,8 @@ if( class_exists('ACF') ) {
 	require_once ('files/taxonomy/klasser.php');
 	require_once ('files/taxonomy/typer.php');
 	require_once ('files/taxonomy/fag.php');
+	require_once ('files/taxonomy/aargang.php');
 	require_once ('files/taxonomy/term-klasser.php');
 	require_once ('files/taxonomy/term-fag.php');
+	require_once ('files/taxonomy/term-aargang.php');
 }
