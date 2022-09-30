@@ -9,6 +9,8 @@ function kl_type($atts) {
         array(
             'kl' => '',
             'type' => '',
+            'orderby' => 'menu_order',
+            'order' => 'ACS',
         ), 
     $atts));
 
@@ -16,8 +18,8 @@ function kl_type($atts) {
 
     $loop = new WP_Query( array(
         'post_type' => 'sh_filer',
-        'orderby' => 'menu_order',
-        'order' => 'ASC',  
+        'orderby' => $orderby,
+        'order' => $order, 
         'posts_per_page'    => -1,
         'tax_query' => array(
             'relation'      => 'AND',
