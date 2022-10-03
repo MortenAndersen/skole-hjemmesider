@@ -10,7 +10,7 @@ function aargang_type($atts) {
             'aargang' => '',
             'type' => '',
             'orderby' => 'menu_order',
-            'order' => 'ACS',
+            'order' => 'ASC',
         ), 
     $atts));
 
@@ -18,24 +18,10 @@ function aargang_type($atts) {
 
     $loop = new WP_Query( array(
         'post_type' => 'sh_filer',
+        
         'orderby' => $orderby,
         'order' => $order,  
-        'posts_per_page'    => -1,
-        'tax_query' => array(
-            'relation'      => 'AND',
-            array(
-                'taxonomy' => 'aargang',
-                'field' => 'slug',
-                'terms' => $aargang,
-                'operator' => 'IN'
-            ),
-            array(
-                'taxonomy' => 'typer',
-                'field' => 'slug',
-                'terms' => $type,
-                'operator' => 'IN'  
-            ),      
-        )      
+        'posts_per_page'    => -1,  
     ));
 
 // -------------------------------------------
