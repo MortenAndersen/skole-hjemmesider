@@ -41,15 +41,23 @@ function aargang_type($atts) {
 
 // -------------------------------------------
 
-    if ( $loop->have_posts() ) {
-        echo '<div class="filer">';
+if ( $loop->have_posts() ) {
+
+        if( current_user_can('editor') || current_user_can('administrator') ) {
+            echo '<div class="filer filer-admin">';
+        }
+        else {
+            echo '<div class="filer">';
+        }
+
             while ( $loop->have_posts() ) : $loop->the_post(); 
                 fil_loop();
             endwhile; wp_reset_query();
+
         echo '</div>';
     } else {
         echo '<p><strong>Ingen Filer i denne shortcode!</strong></p>';
-    }
+}
     
 // -------------------------------------------
 

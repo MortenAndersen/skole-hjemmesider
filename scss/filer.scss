@@ -5,29 +5,48 @@
         	text-decoration: none;
         }
 }
-
+.fil:nth-child(odd) {
+        background: rgba(0, 0, 0, .05);
+    }
 @media (min-width: 700px) {
 
-    .fil {
+    .filer.filer-admin .fil {
 
-        grid-template-columns: auto 30%;
-
+    	display: grid;
+  		grid-template-columns: 3fr 1fr 50px;
+  		grid-template-rows: auto 1fr min-content;
+  		grid-template-areas: "t n e"
+                        	"i i i"              
     }
 
-    .fil:nth-child(even) {
-        background: rgba(0, 0, 0, .05);
+    .filer .fil {
+
+    	display: grid;
+  		grid-template-columns: 3fr 1fr;
+  		grid-template-rows: auto 1fr min-content;
+  		grid-template-areas: "t n"
+                        	"i i"              
     }
 
     .fil .file-title {
-        grid-area: a;
+        grid-area: t;
     }
 
     .fil .note {
         font-size: .85rem;
+        grid-area: n;
     }
 
     .fil .info p {
         margin: .5rem 0;
-
+        grid-area: i;
+    }
+    .fil .edit {
+    	grid-area: e;
+    	 a {
+    	 	display: block;
+    	 	text-align: center;
+    	 	width: 100%;
+    	 }
     }	
 }
