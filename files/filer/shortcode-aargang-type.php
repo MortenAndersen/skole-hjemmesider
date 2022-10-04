@@ -18,6 +18,21 @@ function aargang_type($atts) {
 
     $loop = new WP_Query( array(
         'post_type' => 'sh_filer',
+        'tax_query' => array(
+            'relation'      => 'AND',
+            array(
+                'taxonomy' => 'klasser',
+                'field' => 'slug',
+                'terms' => $kl,
+                'operator' => 'IN'
+            ),
+            array(
+                'taxonomy' => 'typer',
+                'field' => 'slug',
+                'terms' => $type,
+                'operator' => 'IN'  
+            ),      
+        ),  
         
         'orderby' => $orderby,
         'order' => $order,  
