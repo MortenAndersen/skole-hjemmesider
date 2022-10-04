@@ -1,12 +1,12 @@
 .fil {
     display: grid;
-    padding: .25rem 0;
+    padding: .25rem .5rem;
     a {
         	text-decoration: none;
         }
 }
 .fil:nth-child(odd) {
-        background: rgba(0, 0, 0, .05);
+        background: rgba(0, 0, 0, .03);
     }
 @media (min-width: 700px) {
 
