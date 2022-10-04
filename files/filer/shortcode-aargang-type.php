@@ -21,9 +21,9 @@ function aargang_type($atts) {
         'tax_query' => array(
             'relation'      => 'AND',
             array(
-                'taxonomy' => 'klasser',
+                'taxonomy' => 'aargang',
                 'field' => 'slug',
-                'terms' => $kl,
+                'terms' => $aargang,
                 'operator' => 'IN'
             ),
             array(
