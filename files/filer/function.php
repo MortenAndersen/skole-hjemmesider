@@ -3,7 +3,6 @@
 function fil_loop() {
 
 	echo '<div class="fil">';
-
         $file = get_field('Fil');
         if( $file ) {
             echo '<div class="fil-title"><a href="' . $file['url'] . '" target="_blank">' . get_the_title() . '</a></div>';
@@ -20,7 +19,7 @@ function fil_loop() {
             echo '<div class="info">' . $info . '</div>';
         }
             
-        edit_post_link( __( '+', 'skolehjemmesider-domain' ), '<div class="edit">', '</div>' );
+        edit_post_link( __( 'edit', 'skolehjemmesider-domain' ), '<div class="edit">', '</div>' );
 
     echo '</div>';
 
