@@ -19,7 +19,7 @@ function fil_loop() {
             echo '<div class="info">' . $info . '</div>';
         }
             
-        edit_post_link( __( 'edit', 'skolehjemmesider-domain' ), '<div class="edit">', '</div>' );
+        edit_post_link( __( '+', 'skolehjemmesider-domain' ), '<div class="edit">', '</div>' );
 
     echo '</div>';
 
