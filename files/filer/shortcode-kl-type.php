@@ -56,7 +56,7 @@ function kl_type($atts) {
 
         echo '</div>';
     } else {
-        echo '<p><strong>Ingen filer i denne shortcode!</strong></p>';
+        echo '<p><strong>Ingen filer!</strong></p>';
     }
     
 // -------------------------------------------

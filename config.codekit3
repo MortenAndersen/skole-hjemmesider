@@ -115,6 +115,14 @@
 		"oAP": "/files/filer/shortcode-test.php",
 		"oF": 0
 		},
+	"/files/filer/shortcode-type.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/filer/shortcode-type.php",
+		"oF": 0
+		},
 	"/files/filer/shortcode.php": {
 		"cB": 0,
 		"ft": 8192,
