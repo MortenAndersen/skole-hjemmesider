@@ -18,6 +18,13 @@ function skolehjemmesider_register_plugin_styles() {
 }
 add_action('wp_enqueue_scripts', 'skolehjemmesider_register_plugin_styles');
 
+
+
+function ava_test_init() {
+    wp_enqueue_script( 'skole-hjemmesider-js', plugins_url( '/js/skole-min.js', __FILE__ ));
+}
+add_action('wp_enqueue_scripts','ava_test_init',999);
+
 // Files
 if( class_exists('ACF') ) {
 
@@ -52,4 +59,19 @@ if( class_exists('ACF') ) {
 	require_once ('files/taxonomy/term-klasser.php');
 	require_once ('files/taxonomy/term-fag.php');
 	require_once ('files/taxonomy/term-aargang.php');
+
+	// Options pages
+	require_once ('files/inc/option-page.php');
+	//require_once ('files/inc/shortcode-intranav.php');
+	require_once ('files/inc/top-bar.php');
+
+	// Icons
+	require_once ('img/intra-svg.php');
+	require_once ('img/facebook-svg.php');
+	require_once ('img/search-svg.php');
+	require_once ('img/phone-svg.php');
+	require_once ('img/mail-svg.php');
+
+	// ACF
+	require_once ('acf/top-bar.php');
 }

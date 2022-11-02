@@ -1,1 +1,130 @@
+.skole-bar {
+	padding: .25rem 1rem;
+	display: flex;
+	background: linear-gradient(to bottom, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+	color: #fff;
+	border-bottom: 1px solid #506a73;
+}
+.skole-intra {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 5px 0;
+	gap: .5rem;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-size: .8rem;
+	flex-flow: row;
+		gap: 1rem;
+	a {
+		display: flex;
+		color: inherit;
+		border-right: 1px solid rgb(255 255 255 / .2);
+			padding-right: 1rem;
+			span {
+				display: none;
+			}
+	}
+	svg {
+		width: 20px;
+		margin-right: 1ch;
+		fill: #ffffff;
+	}
+}
 
+.skole-some {
+	margin-left: auto;
+	display: none;
+	svg {
+		width: 30px;
+
+	}
+}
+.info-con {
+	display: none;
+	background: #506a74;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	overflow: hidden;
+	label {
+		opacity: .7;
+	}
+	input[type=text],
+	input[type=submit] {
+		height: 30px;
+	}
+	input[type=submit] {
+			background: linear-gradient(to bottom, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+			color: #fff;
+			border-color: #0f2027;
+	}
+	input[type=text],
+	input[type=text]:focus {
+		background: #fff;
+		color: #222;
+	}
+}
+.slide-con {
+	padding: 1rem;
+	display: flex;
+	gap: 1rem;
+}
+.bar-icons {
+	display: flex;
+	align-items: center;
+	padding: 0 .5rem;
+	border-left: 1px solid rgba(255,255,255,.2);
+	border-right: 1px solid rgba(255,255,255,.2);
+	svg {
+	cursor: pointer;
+	margin: 0 .5rem;
+	fill: #ffffff;
+	}
+	.open {
+		svg {
+			animation: dance 1s infinite alternate;
+		}
+	}
+}
+
+.info-item {
+	display: flex;
+	gap: 1ch;
+	line-height: 1;
+	&:nth-child(odd) {
+		border-right: 1px solid rgba(255,255,255,.2);
+		padding-right: 1rem;
+	}
+}
+@media (min-width: 600px) {
+	.skole-intra {
+
+		a {
+
+			span {
+				display: inline;
+			}
+		}
+	}
+
+}
+
+@media (min-width: 550px) {
+	.skole-some,
+	.search-action {
+		display: block;
+	}
+}
+
+
+
+@keyframes dance {
+  0% {
+        fill: #ffffff
+    }
+
+    
+
+    100% {
+        fill: #506a73;
+    }
+}

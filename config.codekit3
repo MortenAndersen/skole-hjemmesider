@@ -17,6 +17,14 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
+	"/acf/top-bar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/acf/top-bar.php",
+		"oF": 0
+		},
 	"/css/skole-hjemmesider.css": {
 		"aP": 1,
 		"bl": 0,
@@ -131,6 +139,30 @@
 		"oAP": "/files/filer/shortcode.php",
 		"oF": 0
 		},
+	"/files/inc/option-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/option-page.php",
+		"oF": 0
+		},
+	"/files/inc/shortcode-intranav.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/shortcode-intranav.php",
+		"oF": 0
+		},
+	"/files/inc/top-bar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/top-bar.php",
+		"oF": 0
+		},
 	"/files/personale/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -218,6 +250,68 @@
 		"oA": 0,
 		"oAP": "/files/taxonomy/typer.php",
 		"oF": 0
+		},
+	"/img/facebook-svg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/facebook-svg.php",
+		"oF": 0
+		},
+	"/img/intra-svg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/intra-svg.php",
+		"oF": 0
+		},
+	"/img/mail-svg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/mail-svg.php",
+		"oF": 0
+		},
+	"/img/phone-svg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/phone-svg.php",
+		"oF": 0
+		},
+	"/img/search-svg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/search-svg.php",
+		"oF": 0
+		},
+	"/js/skole-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/skole-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/skole.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/skole-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/scss/all.scss": {
 		"aP": 1,
