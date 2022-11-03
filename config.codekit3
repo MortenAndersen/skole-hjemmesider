@@ -17,6 +17,14 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
+	"/acf/beskederr.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/acf/beskederr.php",
+		"oF": 0
+		},
 	"/acf/top-bar.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -153,6 +161,38 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/files/inc/shortcode-intranav.php",
+		"oF": 0
+		},
+	"/files/inc/shortcode-skolebesked-billeder.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/shortcode-skolebesked-billeder.php",
+		"oF": 0
+		},
+	"/files/inc/shortcode-skolebesked-filer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/shortcode-skolebesked-filer.php",
+		"oF": 0
+		},
+	"/files/inc/shortcode-skolebesked-stor.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/shortcode-skolebesked-stor.php",
+		"oF": 0
+		},
+	"/files/inc/shortcode-skolebesked.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/shortcode-skolebesked.php",
 		"oF": 0
 		},
 	"/files/inc/top-bar.php": {

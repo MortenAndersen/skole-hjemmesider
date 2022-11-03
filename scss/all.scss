@@ -125,8 +125,23 @@
 	}
 }
 
-
-
+.stor-besked {
+	font-size: clamp(1.8rem, 4vw, 4rem);
+}
+.skole-filer {
+	a {
+		&:after {
+			content: ',';
+			display: inline-block;
+			margin-right: 1ch;
+		}
+		&:last-of-type {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
 @keyframes dance {
   0% {
         fill: #ffffff
