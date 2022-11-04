@@ -46,17 +46,10 @@ endif;
 
 // -------------------------------------------
 
-$images = get_field('skole_billeder', 'option');
-if( $images ):
+$image = get_field('skole_billede', 'option');
+if( $image ):
 
-       foreach( $images as $image ): 
-  
-                echo '<a href="' . esc_url($image['url']) . '">
-                     <img src="' . esc_url($image['sizes']['thumbnail']) . '" alt="' . esc_attr($image['alt']) . '" />
-                </a>';
-
-
-       endforeach; 
+       echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" />';
 
 endif; 
 
