@@ -6,11 +6,11 @@ $foraeldre = get_field('skole_foraeldre_intra', 'option');
 $personale = get_field('skole_personale_intra', 'option');
 
 $facebook = get_field('skole_facebook', 'option');
+$instagram = get_field('skole_instagram', 'option');
 
 echo '<div class="skole-bar">';
 	echo '<nav class="skole-intra">';
-		if ($elev) {
-			
+		if ($elev) {		
 			echo '<a href="' . $elev . '" target="_blank">' . intra_icon() . 'E<span>lev</span></a>';
 		}
 		if ($foraeldre) {
@@ -19,23 +19,31 @@ echo '<div class="skole-bar">';
 		if ($personale) {
 			echo '<a href="' . $personale . '" target="_blank">' . intra_icon() . 'P<span>ersonale</span></a>';
 		}
-		echo '<div class="bar-icons">';
-			echo '<div class="search-action">' . search_icon() . '</div>';
-			echo '<div class="phone-action">' . phone_icon() . '</div>';
-			echo '<div class="mail-action">' . mail_icon() . '</div>';
-		echo '</div>';
 	echo '</nav>';
+
+	echo '<div class="bar-icons">';
+		echo '<div class="search-action">' . search_icon() . '</div>';
+		echo '<div class="phone-action">' . phone_icon() . '</div>';
+		echo '<div class="mail-action">' . mail_icon() . '</div>';
+	echo '</div>';
 	
-		if ($facebook) {
-			echo '<div class="skole-some">';
+	if ( $facebook || $instagram ) {
+		echo '<div class="skole-some">';
+			if ($facebook) {
 				echo '<a href="' . $facebook . '" target="_blank">' . facebook_icon() . '</a>';
-			echo '</div>';
-		}
+			}
+
+			if ($instagram) {
+				echo '<a href="' . $instagram . '" target="_blank">' . instagram_icon() . '</a>';	
+			}
+		echo '</div>';
+	}
 
 echo '</div>';
 
 echo '<div class="slide-search info-con">';
 	echo '<div class="slide-con">';
+	echo '<label>Søg på skolens hjemmeside:</label>';
 		get_search_form();
 	echo '</div>';
 echo '</div>';

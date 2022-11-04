@@ -1,26 +1,35 @@
+:root {
+	--skole-border: rgb(255 255 255 / .1);
+	--skole-info-con: #2a5161;
+}
 .skole-bar {
-	padding: .25rem 1rem;
+	padding: .5rem 1rem;
 	display: flex;
 	background: linear-gradient(to bottom, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
 	color: #fff;
 	border-bottom: 1px solid #506a73;
+	line-height: 20px;
+	svg {
+		width: 20px;
+	}
 }
 .skole-intra {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	padding: 5px 0;
 	gap: .5rem;
-	line-height: 20px;
+	
 	text-transform: uppercase;
 	font-size: .8rem;
 	flex-flow: row;
+	padding: 0 .5rem;
+	border-left: 1px solid var(--skole-border);
+	border-right: 1px solid var(--skole-border);
 		gap: 1rem;
 	a {
 		display: flex;
 		color: inherit;
-		border-right: 1px solid rgb(255 255 255 / .2);
-			padding-right: 1rem;
+
 			span {
 				display: none;
 			}
@@ -29,7 +38,6 @@
 		}
 	}
 	svg {
-		width: 20px;
 		margin-right: 1ch;
 		fill: #ffffff;
 	}
@@ -38,19 +46,17 @@
 .skole-some {
 	margin-left: auto;
 	display: none;
-	svg {
-		width: 30px;
-
-	}
 }
 .info-con {
 	display: none;
-	background: #506a74;
+	background: var(--skole-info-con);
 	color: #fff;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid var(--skole-border);
 	overflow: hidden;
 	label {
-		opacity: .7;
+		opacity: .5;
+		margin: 0;
+		font-size: .85rem;
 	}
 	input[type=text],
 	input[type=submit] {
@@ -74,16 +80,20 @@
 	}
 }
 .slide-con {
-	padding: 1rem;
+	padding: .5rem 1rem;
 	display: flex;
 	gap: 1rem;
+	align-items: center;
+	a {
+		text-decoration: none;
+	}
 }
 .bar-icons {
 	display: flex;
 	align-items: center;
 	padding: 0 .5rem;
-	border-left: 1px solid rgba(255,255,255,.2);
-	border-right: 1px solid rgba(255,255,255,.2);
+	border-left: 1px solid var(--skole-border);
+	border-right: 1px solid var(--skole-border);
 	svg {
 	cursor: pointer;
 	margin: 0 .5rem;
@@ -98,10 +108,11 @@
 
 .info-item {
 	display: flex;
+	align-items: center;
 	gap: 1ch;
 	line-height: 1;
 	&:nth-child(odd) {
-		border-right: 1px solid rgba(255,255,255,.2);
+		border-right: 1px solid var(--skole-border);
 		padding-right: 1rem;
 	}
 }
@@ -119,9 +130,13 @@
 }
 
 @media (min-width: 550px) {
-	.skole-some,
-	.search-action {
-		display: block;
+	.skole-some {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		padding: 0 .5rem;
+		border-right: 1px solid var(--skole-border);
+		border-left: 1px solid var(--skole-border);
 	}
 }
 

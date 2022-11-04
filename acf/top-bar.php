@@ -256,6 +256,23 @@ acf_add_local_field_group(array(
 			'default_value' => '',
 			'placeholder' => '',
 		),
+		array(
+			'key' => 'field_6364d861739ef',
+			'label' => 'Instagram',
+			'name' => 'skole_instagram',
+			'aria-label' => '',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
 	),
 	'location' => array(
 		array(

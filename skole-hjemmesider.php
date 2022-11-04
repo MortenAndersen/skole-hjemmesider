@@ -64,9 +64,6 @@ if( class_exists('ACF') ) {
 	require_once ('files/inc/option-page.php');
 	//require_once ('files/inc/shortcode-intranav.php');
 	require_once ('files/inc/shortcode-skolebesked.php');
-	require_once ('files/inc/shortcode-skolebesked-stor.php');
-	require_once ('files/inc/shortcode-skolebesked-filer.php');
-	require_once ('files/inc/shortcode-skolebesked-billeder.php');
 	require_once ('files/inc/top-bar.php');
 
 	// Icons
@@ -75,6 +72,7 @@ if( class_exists('ACF') ) {
 	require_once ('img/search-svg.php');
 	require_once ('img/phone-svg.php');
 	require_once ('img/mail-svg.php');
+	require_once ('img/instagram-svg.php');
 
 	// ACF
 	require_once ('acf/top-bar.php');
