@@ -15,18 +15,33 @@ function skole_besked($atts) {
 // ----------------------------------------------------
 
 $besked_stor = get_field('skole_besked_stor', 'option');
+$besked = get_field('skole_besked_alm', 'option');
 
-echo '<div class="skole-besked stor-besked">';
-    echo $besked_stor;
-echo '</div>';
+$image = get_field('skole_billede', 'option');
+if ( $image ) {
+    $title = $image['title'];
+    $url = $image['url'];
+    $size = 'medium';
+    $thumb = $image['sizes'][ $size ];
+}
+
+if ( $besked_stor || $besked || $image ) {
+echo '<div class="skole-besked-con">';
+
+if ( $besked_stor ) {
+    echo '<div class="skole-besked stor-besked">';
+        echo $besked_stor;
+    echo '</div>';
+}
 
 // -------------------------------------------
 
-$besked = get_field('skole_besked_alm', 'option');
 
-echo '<div class="skole-besked">';
-    echo $besked;
-echo '</div>';
+if ( $besked ) {
+    echo '<div class="skole-besked">';
+        echo $besked;
+    echo '</div>';
+}
 
 // -------------------------------------------
 
@@ -36,7 +51,7 @@ if( have_rows('skole_filer', 'option') ):
     
         $sub_fil = get_sub_field('fil');
 
-        if( $sub_fil ): 
+        if( $sub_fil ):
             echo '<a href="' . $sub_fil['url'] . '" target="_blank">' . $sub_fil['filename'] . '</a>';
         endif;
 
@@ -46,13 +61,18 @@ endif;
 
 // -------------------------------------------
 
-$image = get_field('skole_billede', 'option');
-if( $image ):
 
-       echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" />';
+if( $image ):
+    echo '<div class="skole-billede">';
+    echo '<a href="' . esc_url($url) .'" class="lightbox-link" title="' . esc_attr($title) . '">';
+       echo '<img src="' . esc_url($thumb) . '" alt="' . esc_attr($image['alt']) . '" />';
+    echo '</a>';
+    echo '</div>';
 
 endif; 
 
+echo '</div>';
+}
 // -------------------------------------------
 
     $myvariable = ob_get_clean();
