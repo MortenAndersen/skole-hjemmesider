@@ -1,6 +1,6 @@
 <?php
 function facebook_icon() {
-return '<svg width="100%" height="100%" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+return '<svg viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(1.33333,0,0,1.33333,-16,-16)">
         <path d="M84,80C84,82.21 82.21,84 80,84L16,84C13.79,84 12,82.21 12,80L12,16C12,13.79 13.79,12 16,12L80,12C82.21,12 84,13.79 84,16L84,80Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
     </g>

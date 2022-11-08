@@ -9,6 +9,8 @@ $facebook = get_field('skole_facebook', 'option');
 $instagram = get_field('skole_instagram', 'option');
 
 echo '<div class="skole-bar">';
+
+if ( $elev || $foraeldre || $personale ) {
 	echo '<nav class="skole-intra">';
 		if ($elev) {		
 			echo '<a href="' . $elev . '" target="_blank">' . intra_icon() . 'E<span>lev</span></a>';
@@ -20,6 +22,7 @@ echo '<div class="skole-bar">';
 			echo '<a href="' . $personale . '" target="_blank">' . intra_icon() . 'P<span>ersonale</span></a>';
 		}
 	echo '</nav>';
+}
 
 	echo '<div class="bar-icons">';
 		echo '<div class="search-action">' . search_icon() . '</div>';
