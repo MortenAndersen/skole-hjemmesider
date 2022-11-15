@@ -127,10 +127,11 @@
     align-items: center;
     gap: 1ch;
     line-height: 1;
-
-    &:nth-child(odd) {
-        border-right: 1px solid var(--skole-border);
+    border-right: 1px solid var(--skole-border);
         padding-right: 1rem;
+    &:last-of-type {
+        border-right: none;
+        padding-right: none;
     }
 }
 
