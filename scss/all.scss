@@ -60,9 +60,8 @@
     overflow: hidden;
 
     label {
-        opacity: .5;
+        opacity: .6;
         margin: 0;
-        font-size: .85rem;
     }
 
     input[type=text],
@@ -94,10 +93,11 @@
 }
 
 .slide-con {
-    padding: .5rem 1rem;
+    padding: .7rem 1rem;
     display: flex;
     gap: 1rem;
     align-items: center;
+    font-size: 12px;
 
     a {
         text-decoration: none;
