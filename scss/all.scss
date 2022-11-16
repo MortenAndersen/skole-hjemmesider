@@ -68,18 +68,20 @@
     input[type=text],
     input[type=submit] {
         height: 30px;
+        border-color: var(--skole-border);
     }
 
     input[type=submit] {
-        background: linear-gradient(to bottom, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+        background: #2a4d5c;
         color: #fff;
-        border-color: var(--skole-b);
+        box-shadow: none;
+        line-height: 12px;
     }
 
     input[type=text],
     input[type=text]:focus {
-        background: #fff;
-        color: #222;
+        background: #ffffff0f;
+        color: #fff;
     }
 
     a {
