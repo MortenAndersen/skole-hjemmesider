@@ -59,6 +59,7 @@ if( have_rows('skole_telefon', 'option') ):
 
         $sub_label = get_sub_field('label');
         $sub_telefon = get_sub_field('telefon');
+        $sub_telefon_alt = get_sub_field('telefon_alt');
 
         if ( $sub_label || $sub_telefon ) {
         	echo '<div class="skole-tlf info-item">';
@@ -70,6 +71,10 @@ if( have_rows('skole_telefon', 'option') ):
 
 	        if ( $sub_telefon ) {
 	        	echo '<a href="tel:' . $sub_telefon . '">' . $sub_telefon . '</a>';
+	        }
+
+	        if ( $sub_telefon_alt ) {
+	        	echo ' / <a href="tel:' . $sub_telefon_alt . '">' . $sub_telefon_alt . '</a>';
 	        }
 	        echo '</div>';
 	    }
