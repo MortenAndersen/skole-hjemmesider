@@ -8,6 +8,24 @@
 .fil:nth-child(odd) {
         background: rgba(0, 0, 0, .03);
     }
+.fil-title {
+    a {
+        display: flex;
+        align-items: center;
+    }
+    svg {
+        fill: var(--body-color);
+        transition: .5s fill;
+        margin-right: 1ch;
+    }
+    a {
+        &:hover {
+            svg {
+                fill: var(--link);
+            }
+        }
+    }
+}
 @media (min-width: 700px) {
 
     .filer.filer-admin .fil {

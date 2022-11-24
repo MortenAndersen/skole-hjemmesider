@@ -5,7 +5,7 @@ function fil_loop() {
 	echo '<div class="fil">';
         $file = get_field('Fil');
         if( $file ) {
-            echo '<div class="fil-title"><a href="' . $file['url'] . '" target="_blank">' . get_the_title() . '</a></div>';
+            echo '<div class="fil-title"><a href="' . $file['url'] . '" target="_blank"><svg height="20" width="20"><path d="M5.5 16q-.625 0-1.062-.438Q4 15.125 4 14.5V13h1.5v1.5h9V13H16v1.5q0 .625-.438 1.062Q15.125 16 14.5 16Zm4.5-3L6 9l1.062-1.062 2.188 2.187V3h1.5v7.125l2.188-2.187L14 9Z"/></svg>' . get_the_title() . '</a></div>';
         } else {
             echo '<div class="fil-title"><strong>' . get_the_title() . '</strong></div>';
         }
