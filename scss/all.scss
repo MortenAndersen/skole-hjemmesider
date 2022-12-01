@@ -96,11 +96,17 @@
     padding: .7rem 1rem;
     display: flex;
     gap: 1rem;
-    align-items: center;
+    flex-flow: column;
     font-size: .85rem;
 
     a {
         text-decoration: none;
+    }
+}
+@media (min-width: 1025px) {
+    .slide-con {
+        flex-flow: row;
+        align-items: center;
     }
 }
 
