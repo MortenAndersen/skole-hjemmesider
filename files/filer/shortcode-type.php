@@ -8,7 +8,7 @@ function type($atts) {
     extract(shortcode_atts(
         array(
             'type' => '',
-            'orderby' => 'menu_order',
+            'orderby' => 'date',
             'order' => 'ASC',
         ), 
     $atts));

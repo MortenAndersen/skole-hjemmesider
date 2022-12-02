@@ -34,7 +34,8 @@
   		grid-template-columns: 3fr 1fr 50px;
   		grid-auto-flow: column;
   		grid-template-areas: "t n e"
-                        	"i i i"              
+                        	"i i i" 
+                            "o o o"             
     }
 
     .filer .fil {
@@ -66,5 +67,13 @@
     	 	text-align: center;
     	 	width: 100%;
     	 }
-    }	
+    }
+    .fil {
+        .sidst-opdateret {
+            grid-area: o;
+            text-align: right;
+            font-size: .8rem;
+            font-style: italic;
+        }
+    }
 }
