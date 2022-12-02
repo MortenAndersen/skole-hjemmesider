@@ -32,7 +32,7 @@ if ( $elev || $foraeldre || $personale ) {
 		echo '<div class="mail-action">' . mail_icon() . '</div>';
 
 		if ( $dwonload_link ) {
-			echo ' | <div class="download-action"><a href="/dwonload">' . download_icon() . '</a></div>';
+			echo ' | <div class="download-action"><a href="/download">' . download_icon() . '</a></div>';
 		}
 	echo '</div>';
 	
