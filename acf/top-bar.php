@@ -169,6 +169,26 @@ acf_add_local_field_group(array(
 				),
 			),
 		),
+		array(
+			'key' => 'field_638a0efd4e578',
+			'label' => 'Vis Download link',
+			'name' => 'skole_download',
+			'aria-label' => '',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 0,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
 	),
 	'location' => array(
 		array(
@@ -190,4 +210,4 @@ acf_add_local_field_group(array(
 	'show_in_rest' => 0,
 ));
 
-endif;
+endif;		

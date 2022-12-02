@@ -73,8 +73,11 @@ if( class_exists('ACF') ) {
 	require_once ('img/phone-svg.php');
 	require_once ('img/mail-svg.php');
 	require_once ('img/instagram-svg.php');
+	require_once ('img/download-svg.php');
 
 	// ACF
 	require_once ('acf/top-bar.php');
 	require_once ('acf/beskeder.php');
+	require_once ('acf/skole-intra.php');
+	require_once ('acf/skole-some.php');
 }

@@ -8,6 +8,8 @@ $personale = get_field('skole_personale_intra', 'option');
 $facebook = get_field('skole_facebook', 'option');
 $instagram = get_field('skole_instagram', 'option');
 
+$dwonload_link = get_field('skole_download', 'option');
+
 echo '<div class="skole-bar">';
 
 if ( $elev || $foraeldre || $personale ) {
@@ -28,6 +30,10 @@ if ( $elev || $foraeldre || $personale ) {
 		echo '<div class="search-action">' . search_icon() . '</div>';
 		echo '<div class="phone-action">' . phone_icon() . '</div>';
 		echo '<div class="mail-action">' . mail_icon() . '</div>';
+
+		if ( $dwonload_link ) {
+			echo ' | <div class="download-action"><a href="/dwonload">' . download_icon() . '</a></div>';
+		}
 	echo '</div>';
 	
 	if ( $facebook || $instagram ) {
