@@ -17,6 +17,14 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
+	"/acf/begivenheder.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/acf/begivenheder.php",
+		"oF": 0
+		},
 	"/acf/beskeder.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -169,6 +177,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/files/inc/option-page.php",
+		"oF": 0
+		},
+	"/files/inc/shortcode-begivenheder.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/shortcode-begivenheder.php",
 		"oF": 0
 		},
 	"/files/inc/shortcode-intranav.php": {
@@ -378,6 +394,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/all.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/begivenheder.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/begivenheder.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0

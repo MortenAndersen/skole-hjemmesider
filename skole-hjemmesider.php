@@ -25,6 +25,12 @@ function ava_test_init() {
 }
 add_action('wp_enqueue_scripts','ava_test_init',999);
 
+// Thumbnail
+if ( function_exists( 'add_theme_support' ) ) {
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'icon', 75, 75, true );
+}
+
 // Files
 if( class_exists('ACF') ) {
 
@@ -62,7 +68,7 @@ if( class_exists('ACF') ) {
 
 	// Options pages
 	require_once ('files/inc/option-page.php');
-	//require_once ('files/inc/shortcode-intranav.php');
+	require_once ('files/inc/shortcode-begivenheder.php');
 	require_once ('files/inc/shortcode-skolebesked.php');
 	require_once ('files/inc/top-bar.php');
 
@@ -78,6 +84,7 @@ if( class_exists('ACF') ) {
 	// ACF
 	require_once ('acf/top-bar.php');
 	require_once ('acf/beskeder.php');
+	require_once ('acf/begivenheder.php');
 	require_once ('acf/skole-intra.php');
 	require_once ('acf/skole-some.php');
 }

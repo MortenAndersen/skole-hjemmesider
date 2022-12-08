@@ -14,13 +14,13 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Besked',
         'parent_slug'   => 'skole-general-settings',
     ));
-/*
+
     acf_add_options_sub_page(array(
-        'page_title'    => 'Kontakt',
-        'menu_title'    => 'Kontakt',
+        'page_title'    => 'Begivenheder',
+        'menu_title'    => 'Begivenheder',
         'parent_slug'   => 'skole-general-settings',
     ));
-*/
+
     acf_add_options_sub_page(array(
         'page_title'    => 'Top bar',
         'menu_title'    => 'Top bar',
