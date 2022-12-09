@@ -6,6 +6,26 @@ acf_add_local_field_group(array(
 	'title' => 'Begivenheder',
 	'fields' => array(
 		array(
+			'key' => 'field_63933a1024349',
+			'label' => 'Overskrift (H2)',
+			'name' => 'overskrift',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
 			'key' => 'field_6391cb56e8948',
 			'label' => 'Begivenhed',
 			'name' => 'begivenhed',
