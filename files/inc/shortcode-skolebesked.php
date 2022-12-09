@@ -29,9 +29,9 @@ if ( $besked_stor || $besked || $image ) {
 echo '<div class="skole-besked-con">';
 
 if ( $besked_stor ) {
-    echo '<div class="skole-besked stor-besked">';
+    echo '<h2>';
         echo $besked_stor;
-    echo '</div>';
+    echo '</h2>';
 }
 
 // -------------------------------------------

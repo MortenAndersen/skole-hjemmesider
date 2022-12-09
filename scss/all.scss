@@ -167,10 +167,6 @@
     }
 }
 
-.stor-besked {
-    font-size: clamp(1.8rem, 4vw, 4rem);
-}
-
 .skole-filer {
     a {
         &:after {
@@ -197,5 +193,11 @@
 
     100% {
         fill: #506a73;
+    }
+}
+
+.skole-besked-con {
+    h2 {
+        margin-top: 0;
     }
 }
