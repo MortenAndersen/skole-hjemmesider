@@ -24,7 +24,7 @@ if( have_rows('begivenhed', 'option') ):
         $sub_overskrift = get_sub_field('overskrift');
         $sub_tekst = get_sub_field('tekst');
         $sub_billede = get_sub_field('billede');
-            $size = 'large';
+            $size = 'Thumbnail';
             $thumb = $sub_billede['sizes'][ $size ];
             $width = $sub_billede['sizes'][ $size . '-width' ];
             $height = $sub_billede['sizes'][ $size . '-height' ];

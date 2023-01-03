@@ -21,7 +21,7 @@ $image = get_field('skole_billede', 'option');
 if ( $image ) {
     $title = $image['title'];
     $url = $image['url'];
-    $size = 'medium';
+    $size = 'large';
     $thumb = $image['sizes'][ $size ];
 }
 
