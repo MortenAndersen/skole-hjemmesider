@@ -46,9 +46,9 @@ if( have_rows('begivenhed', 'option') ):
             
             if( $sub_file ): 
                 if( $sub_file_txt ) {
-                    echo '<div class="begivenhed-fil">' . download_icon() .' <a href="' . $sub_file['url'] . '">' . $sub_file_txt . '</a></div>';
+                    echo '<div class="begivenhed-fil">' . download_icon() .' <a href="' . $sub_file['url'] . '" target="_blank">' . $sub_file_txt . '</a></div>';
                 } else {
-                    echo '<div class="begivenhed-fil">' . download_icon() .' <a href="' . $sub_file['url'] . '">' . $sub_overskrift . '</a></div>';
+                    echo '<div class="begivenhed-fil">' . download_icon() .' <a href="' . $sub_file['url'] . '" target="_blank">' . $sub_overskrift . '</a></div>';
                 }
             endif;
         echo '</div>';
