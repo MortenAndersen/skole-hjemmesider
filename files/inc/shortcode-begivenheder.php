@@ -24,6 +24,7 @@ if( have_rows('begivenhed', 'option') ):
         $sub_overskrift = get_sub_field('overskrift');
         $sub_tekst = get_sub_field('tekst');
         $sub_file = get_sub_field('fil');
+        $sub_file_txt = get_sub_field('link_tekst');
         $sub_billede = get_sub_field('billede');
             $size = 'thumbnail';
             $thumb = $sub_billede['sizes'][ $size ];
@@ -44,7 +45,11 @@ if( have_rows('begivenhed', 'option') ):
             endif;
             
             if( $sub_file ): 
-                echo '<a class="begivenhed-fil" href="' . $sub_file['url'] . '">Download: ' . $sub_overskrift . '</a>';
+                if( $sub_file_txt ) {
+                    echo '<div class="begivenhed-fil">' . download_icon() .' <a href="' . $sub_file['url'] . '">' . $sub_file_txt . '</a></div>';
+                } else {
+                    echo '<div class="begivenhed-fil">' . download_icon() .' <a href="' . $sub_file['url'] . '">' . $sub_overskrift . '</a></div>';
+                }
             endif;
         echo '</div>';
 
