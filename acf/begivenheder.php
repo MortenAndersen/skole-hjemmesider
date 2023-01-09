@@ -1,4 +1,4 @@
-<?php 
+<?php
 			if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
@@ -7,7 +7,7 @@ acf_add_local_field_group(array(
 	'fields' => array(
 		array(
 			'key' => 'field_63933a1024349',
-			'label' => 'Overskrift (H2)',
+			'label' => 'Overskrift',
 			'name' => 'overskrift',
 			'aria-label' => '',
 			'type' => 'text',
@@ -113,6 +113,27 @@ acf_add_local_field_group(array(
 					'rows' => 2,
 					'placeholder' => '',
 					'new_lines' => '',
+					'parent_repeater' => 'field_6391cb56e8948',
+				),
+				array(
+					'key' => 'field_63bc04cee73a2',
+					'label' => 'Fil',
+					'name' => 'fil',
+					'aria-label' => '',
+					'type' => 'file',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'return_format' => 'array',
+					'library' => 'all',
+					'min_size' => '',
+					'max_size' => '',
+					'mime_types' => '',
 					'parent_repeater' => 'field_6391cb56e8948',
 				),
 			),
