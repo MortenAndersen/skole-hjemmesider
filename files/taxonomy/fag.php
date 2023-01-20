@@ -33,6 +33,7 @@
         'show_in_nav_menus'          => true,
         'show_tagcloud'              => false,
         'show_in_rest'               => true,
+        'show_in_nav_menus'          => false
 
     );
     register_taxonomy( 'fag', array( 'sh_filer', 'sh_personale' ), $args );

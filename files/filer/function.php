@@ -22,8 +22,8 @@ function fil_loop() {
         edit_post_link( __( '+', 'skolehjemmesider-domain' ), '<div class="edit">', '</div>' );
 
         if ( is_user_logged_in() ) {
-            $updated = get_the_modified_time( 'j/n Y - H:i:s');
-            echo '<div class="sidst-opdateret">Opdateret den: ' . $updated . '</div>';
+            $updated = get_the_modified_time( 'j/n Y');
+            echo '<div class="sidst-opdateret">Opdateret: ' . $updated . '</div>';
         }
 
 
