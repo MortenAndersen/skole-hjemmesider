@@ -40,7 +40,7 @@ if ( $elev || $foraeldre || $personale ) {
 
 		        $sub_url = get_sub_field('side');
 		        if ($sub_url) {
-		        	$link_url = str_replace(array('http://', 'https://'), '', $sub_url['url']);
+		        	$link_url = $sub_url['url'];
 		        	$link_title = $sub_url['title'];
 		        	$link_class = $sub_url['title'];
 		        
@@ -55,13 +55,13 @@ if ( $elev || $foraeldre || $personale ) {
 		        $sub_type = get_sub_field('type');
 
 		        if( $sub_type == 'Uden ikon' ) {
-		        	echo '<a href="/' . $link_url . '" class="' . $link_class . '">' . $link_title . '</a>';
+		        	echo '<a href="' . $link_url . '" class="' . $link_class . '">' . $link_title . '</a>';
 		        }
 		        if( $sub_type == 'Download' ) {
-		        	echo '<a href="/' . $link_url . '" class="down-' . $id . '">' . download_icon() . '</a>';
+		        	echo '<a href="' . $link_url . '" class="down-' . $id . '">' . download_icon() . '</a>';
 		        }
 		        if( $sub_type == 'Kalender' ) {
-		        	echo '<a href="/' . $link_url . '" class="cal-' . $id . '">' . calendar_icon() . '</a>';
+		        	echo '<a href="' . $link_url . '" class="cal-' . $id . '">' . calendar_icon() . '</a>';
 		        }
 
 		        $id++;
