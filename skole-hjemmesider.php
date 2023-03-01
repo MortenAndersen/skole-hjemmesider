@@ -80,6 +80,7 @@ if( class_exists('ACF') ) {
 	require_once ('img/mail-svg.php');
 	require_once ('img/instagram-svg.php');
 	require_once ('img/download-svg.php');
+	require_once ('img/calendar-svg.php');
 
 	// ACF
 	require_once ('acf/top-bar.php');

@@ -31,44 +31,9 @@ if ( $elev || $foraeldre || $personale ) {
 		echo '<div class="phone-action">' . phone_icon() . '</div>';
 		echo '<div class="mail-action">' . mail_icon() . '</div>';
 
-		if( have_rows('links', 'option') ):
-			echo ' | ';
-
-			$id = 0; 
-
-		    while( have_rows('links', 'option') ) : the_row();
-
-		        $sub_url = get_sub_field('side');
-		        if ($sub_url) {
-		        	$link_url = str_replace(array('http://', 'https://'), '', $sub_url['url']);
-		        	$link_title = $sub_url['title'];
-		        	$link_class = $sub_url['title'];
-		        
-		        		$unwanted_array = array( ' ' => '',   'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'AA', 'Æ'=>'AE', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
-                            'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'OE', 'Ù'=>'U',
-                            'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'aa', 'æ'=>'ae', 'ç'=>'c',
-                            'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
-                            'ö'=>'o', 'ø'=>'oe', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y' );
-						$link_class = strtolower(strtr( $link_class, $unwanted_array ));
-
-		        }
-		        $sub_type = get_sub_field('type');
-
-		        if( $sub_type == 'Uden ikon' ) {
-		        	echo '<a href="/' . $link_url . '" class="' . $link_class . '">' . $link_title . '</a>';
-		        }
-		        if( $sub_type == 'Download' ) {
-		        	echo '<a href="/' . $link_url . '" class="down-' . $id . '">' . download_icon() . '</a>';
-		        }
-		        if( $sub_type == 'Kalender' ) {
-		        	echo '<a href="/' . $link_url . '" class="cal-' . $id . '">' . calendar_icon() . '</a>';
-		        }
-
-		        $id++;
-
-		    endwhile;
-		endif;
-
+		if ( $dwonload_link ) {
+			echo ' | <div class="download-action"><a href="/download">' . download_icon() . '</a></div>';
+		}
 	echo '</div>';
 	
 	if ( $facebook || $instagram ) {
