@@ -16,16 +16,9 @@ function skole_besked($atts) {
 
 $besked_stor = get_field('skole_besked_stor', 'option');
 $besked = get_field('skole_besked_alm', 'option');
+$images = get_field('billedgalleri', 'option');
 
-$image = get_field('skole_billede', 'option');
-if ( $image ) {
-    $title = $image['title'];
-    $url = $image['url'];
-    $size = 'large';
-    $thumb = $image['sizes'][ $size ];
-}
-
-if ( $besked_stor || $besked || $image ) {
+if ( $besked_stor || $besked || $images ) {
 echo '<div class="skole-besked-con">';
 
 if ( $besked_stor ) {
@@ -62,14 +55,27 @@ endif;
 // -------------------------------------------
 
 
-if( $image ):
-    echo '<div class="skole-billede">';
-    echo '<a href="' . esc_url($url) .'" class="lightbox-link" title="' . esc_attr($title) . '">';
-       echo '<img src="' . esc_url($thumb) . '" alt="' . esc_attr($image['alt']) . '" />';
-    echo '</a>';
-    echo '</div>';
+if( $images ): 
 
-endif; 
+if (count( $images ) <= 2 ) {
+    $cl = ' g-d-1 ';
+} elseif (count( $images ) <= 4 ) {
+    $cl = ' g-d-2 ';
+} else {
+    $cl = ' g-d-3 ';
+}
+
+
+    echo '<div class="skole-billede grid' . $cl . 'gap-1">';
+       foreach( $images as $image ):
+
+                echo '<a href="' . esc_url($image['url']) . '" class="lightbox-link">';
+                     echo '<img src="' . esc_url($image['sizes']['large']) . '" alt="' . esc_attr($image['alt']) . '" />';
+                echo '</a>';
+
+        endforeach;
+    echo '</div>';
+endif;
 
 echo '</div>';
 }

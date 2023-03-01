@@ -1,38 +1,17 @@
-<?php 
+<?php
 			if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_635fcf973acd0',
 	'title' => 'Beskeder',
 	'fields' => array(
-		
-		array(
-			'key' => 'field_635fcf97f21b7',
-			'label' => 'Stor',
-			'name' => 'skole_besked_stor',
-			'aria-label' => '',
-			'type' => 'text',
-			'instructions' => 'Overskrift på forsiden (H2).',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'maxlength' => '',
-			'rows' => '',
-			'placeholder' => '',
-			'new_lines' => 'br',
-		),
 		array(
 			'key' => 'field_635fd015f21b8',
 			'label' => 'Almindelig',
 			'name' => 'skole_besked_alm',
 			'aria-label' => '',
 			'type' => 'wysiwyg',
-			'instructions' => 'Almindelig tekst på forsiden.',
+			'instructions' => 'Almindelig besked / tekst på forsiden.',
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
@@ -45,6 +24,26 @@ acf_add_local_field_group(array(
 			'toolbar' => 'basic',
 			'media_upload' => 0,
 			'delay' => 0,
+		),
+		array(
+			'key' => 'field_635fcf97f21b7',
+			'label' => 'Stor',
+			'name' => 'skole_besked_stor',
+			'aria-label' => '',
+			'type' => 'textarea',
+			'instructions' => 'Stor og tydelig besked på forsiden.',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'rows' => '',
+			'placeholder' => '',
+			'new_lines' => 'br',
 		),
 		array(
 			'key' => 'field_6363b42aecf9d',
@@ -82,7 +81,7 @@ acf_add_local_field_group(array(
 						'class' => '',
 						'id' => '',
 					),
-					'return_format' => 'array',
+					'return_format' => 'id',
 					'library' => 'all',
 					'min_size' => '',
 					'max_size' => '',
@@ -92,12 +91,12 @@ acf_add_local_field_group(array(
 			),
 		),
 		array(
-			'key' => 'field_6363b4a9ecf9f',
-			'label' => 'Billeder',
-			'name' => 'skole_billede',
+			'key' => 'field_63ff44dd635f0',
+			'label' => 'Billedgalleri',
+			'name' => 'billedgalleri',
 			'aria-label' => '',
-			'type' => 'image',
-			'instructions' => 'Dagens billede ...',
+			'type' => 'gallery',
+			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
@@ -107,6 +106,8 @@ acf_add_local_field_group(array(
 			),
 			'return_format' => 'array',
 			'library' => 'all',
+			'min' => '',
+			'max' => '',
 			'min_width' => '',
 			'min_height' => '',
 			'min_size' => '',
@@ -114,6 +115,7 @@ acf_add_local_field_group(array(
 			'max_height' => '',
 			'max_size' => '',
 			'mime_types' => '',
+			'insert' => 'append',
 			'preview_size' => 'medium',
 		),
 	),
