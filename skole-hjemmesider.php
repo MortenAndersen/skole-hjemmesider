@@ -84,6 +84,7 @@ if( class_exists('ACF') ) {
 
 	// ACF
 	require_once ('acf/top-bar.php');
+	require_once ('acf/top-bar-email-oa.php');
 	require_once ('acf/beskeder.php');
 	require_once ('acf/begivenheder.php');
 	require_once ('acf/skole-intra.php');
