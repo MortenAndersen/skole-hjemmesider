@@ -58,10 +58,10 @@ if ( $elev || $foraeldre || $personale ) {
 		        	echo '<a href="' . $link_url . '" class="' . $link_class . '">' . $link_title . '</a>';
 		        }
 		        if( $sub_type == 'Download' ) {
-		        	echo '<a href="' . $link_url . '" class="down-' . $id . '">' . download_icon() . '</a>';
+		        	echo '<a href="' . $link_url . '" class="down-' . $id . '" title="' . $link_title . '">' . download_icon() . '</a>';
 		        }
 		        if( $sub_type == 'Kalender' ) {
-		        	echo '<a href="' . $link_url . '" class="cal-' . $id . '">' . calendar_icon() . '</a>';
+		        	echo '<a href="' . $link_url . '" class="cal-' . $id . '" title="' . $link_title . '">' . calendar_icon() . '</a>';
 		        }
 
 		        $id++;
