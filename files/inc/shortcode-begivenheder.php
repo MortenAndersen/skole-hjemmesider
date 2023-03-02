@@ -15,10 +15,10 @@ function skole_begivenhed($atts) {
 $overskrift = get_field('overskrift', 'option');
 
 if( have_rows('begivenhed', 'option') ):
-    echo '<div class="skole-begivenheder">';
     if( $overskrift ):
         echo '<h2>'  . $overskrift . '</h2>';
     endif;
+    echo '<div class="skole-begivenheder">';
     while( have_rows('begivenhed', 'option') ) : the_row();
     
         $sub_overskrift = get_sub_field('overskrift');
