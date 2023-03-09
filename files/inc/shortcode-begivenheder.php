@@ -25,6 +25,13 @@ if( have_rows('begivenhed', 'option') ):
         $sub_tekst = get_sub_field('tekst');
         $sub_file = get_sub_field('fil');
         $sub_file_txt = get_sub_field('link_tekst');
+        $sub_link = get_sub_field('link');
+            if( $sub_link ){
+                $link_url = $sub_link['url'];
+                $link_title = $sub_link['title'];
+                $link_target = $sub_link['target'] ? $sub_link['target'] : '_self';
+            }
+
         $sub_billede = get_sub_field('billede');
             $size = 'thumbnail';
             $thumb = $sub_billede['sizes'][ $size ];
@@ -33,7 +40,11 @@ if( have_rows('begivenhed', 'option') ):
 
         echo '<div class="begivenhed">';
             if( $sub_overskrift ):
-                echo '<div class="begivenhed-title">' . $sub_overskrift . '</div>';
+                if ( $sub_link ) {
+                echo '<div class="begivenhed-title"><a href="' . $link_url . '" title="' . $link_title . '" target="' . $link_target . '">' . $sub_overskrift . '</a></div>';
+                } else {
+                    echo '<div class="begivenhed-title">' . $sub_overskrift . '</div>';
+                }
             endif;
 
             if( $sub_tekst ):
@@ -41,7 +52,11 @@ if( have_rows('begivenhed', 'option') ):
             endif;
 
             if( $sub_billede ):
-                echo '<img width="' . $width . '" height="' . $height . '" src="' . esc_url($thumb) . '" />';
+                if ( $sub_link ) {
+                    echo '<a href="' . $link_url . '" class="begivenhed-img" title="' . $link_title . '" target="' . $link_target . '"><img width="' . $width . '" height="' . $height . '" src="' . esc_url($thumb) . '" /></a>';
+                } else {
+                    echo '<img width="' . $width . '" height="' . $height . '" src="' . esc_url($thumb) . '" class="begivenhed-img" />';
+                }
             endif;
             
             if( $sub_file ): 

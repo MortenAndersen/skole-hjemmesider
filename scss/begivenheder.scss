@@ -21,8 +21,11 @@
 	gap: 0 1rem;
 	padding-right: 1rem;
 		img {
-			grid-area: a;
+			
 			mask-image: linear-gradient(to left, black 94%, #0000005e )
+		}
+		.begivenhed-img {
+			grid-area: a;
 		}
 		.begivenhed-title {
 			grid-area: b;

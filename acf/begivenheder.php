@@ -164,6 +164,23 @@ acf_add_local_field_group(array(
 					'append' => '',
 					'parent_repeater' => 'field_6391cb56e8948',
 				),
+				array(
+					'key' => 'field_64089573c24b3',
+					'label' => 'Link',
+					'name' => 'link',
+					'aria-label' => '',
+					'type' => 'link',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'return_format' => 'array',
+					'parent_repeater' => 'field_6391cb56e8948',
+				),
 			),
 		),
 	),
@@ -187,4 +204,4 @@ acf_add_local_field_group(array(
 	'show_in_rest' => 0,
 ));
 
-endif;		
+endif;
