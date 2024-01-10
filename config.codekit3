@@ -219,6 +219,14 @@
 		"oAP": "/files/inc/shortcode-skolebesked.php",
 		"oF": 0
 		},
+	"/files/inc/test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/files/inc/test.php",
+		"oF": 0
+		},
 	"/files/inc/top-bar.php": {
 		"cB": 0,
 		"ft": 8192,
