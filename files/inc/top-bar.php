@@ -15,21 +15,21 @@ function skole_top_bar() {
 	if ($elev || $foraeldre || $personale) {
 		echo '<nav class="skole-intra">';
 		if ($elev) {
-			echo '<a href="' . $elev . '" target="_blank">' . intra_icon() . 'E<span>lev</span></a>';
+			echo '<a href="' . $elev . '" target="_blank" title="Loginside - ElevIntra">' . intra_icon() . 'E<span>lev</span></a>';
 		}
 		if ($foraeldre) {
-			echo '<a href="' . $foraeldre . '" target="_blank">' . intra_icon() . 'F<span>orældre</span></a>';
+			echo '<a href="' . $foraeldre . '" target="_blank" title="Loginside - ForældreIntra">' . intra_icon() . 'F<span>orældre</span></a>';
 		}
 		if ($personale) {
-			echo '<a href="' . $personale . '" target="_blank">' . intra_icon() . 'P<span>ersonale</span></a>';
+			echo '<a href="' . $personale . '" target="_blank" title="Loginside - PersonaleIntra">' . intra_icon() . 'P<span>ersonale</span></a>';
 		}
 		echo '</nav>';
 	}
 
 	echo '<div class="bar-icons">';
-	echo '<div class="search-action">' . search_icon() . '</div>';
-	echo '<div class="phone-action">' . phone_icon() . '</div>';
-	echo '<div class="mail-action">' . mail_icon() . '</div>';
+	echo '<div class="search-action" title="Søg på skolen">' . search_icon() . '</div>';
+	echo '<div class="phone-action" title="Ring til skolen">' . phone_icon() . '</div>';
+	echo '<div class="mail-action" title="Skriv til skolen">' . mail_icon() . '</div>';
 	echo '</div>';
 
 	echo '<div class="bar-icons extra-icons">';
