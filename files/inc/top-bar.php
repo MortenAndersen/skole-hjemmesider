@@ -75,11 +75,11 @@ function skole_top_bar() {
 	if ($facebook || $instagram) {
 		echo '<div class="skole-some">';
 		if ($facebook) {
-			echo '<a href="' . $facebook . '" target="_blank">' . facebook_icon() . '</a>';
+			echo '<a href="' . $facebook . '" title="Facebook" target="_blank">' . facebook_icon() . '</a>';
 		}
 
 		if ($instagram) {
-			echo '<a href="' . $instagram . '" target="_blank">' . instagram_icon() . '</a>';
+			echo '<a href="' . $instagram . '" title="Instagram" target="_blank">' . instagram_icon() . '</a>';
 		}
 		echo '</div>';
 	}
