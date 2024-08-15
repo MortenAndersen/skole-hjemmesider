@@ -1,205 +1,204 @@
 :root {
-    --skole-border: #ddd;
-    --skole-info-con: #fff;
+  --skole-border: #ddd;
+  --skole-info-con: #fff;
 }
 
 .skole-bar {
-    padding:  1rem;
-    display: flex;
-    gap: 1.5rem;
-    background: #0f2027;
-    color: #fff;
-    border-bottom: 1px solid #506a73;
-    line-height: 1;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  background: #0f2027;
+  color: #fff;
+  border-bottom: 1px solid #506a73;
+  line-height: 1;
 
-    svg {
-        height: 20px;
+  svg {
+    height: 20px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.9;
+      color: #fff;
     }
-    a {
-        color: #fff;
-        text-decoration: none;
-        &:hover {
-            opacity: .9;
-            color: #fff;
-        }
-    }
+  }
 }
 
 .skole-intra {
+  display: flex;
+  flex-flow: column;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  flex-flow: row;
+  gap: 1.5rem;
+
+  a {
     display: flex;
-    flex-flow: column;
-    text-transform: uppercase;
-    font-size: .8rem;
-    flex-flow: row;
-    gap: 1.5rem;
+    align-items: center;
 
-    a {
-        display: flex;
-        align-items: center;
-
-        span {
-            display: none;
-        }
-
-        
+    span {
+      display: none;
     }
+  }
 
-    svg {
-        margin-right: 1ch;
-        fill: #ffffff;
-    }
+  svg {
+    margin-right: 1ch;
+    fill: #ffffff;
+  }
 }
 
 .skole-some {
-    margin-left: auto;
-    display: none;
+  margin-left: auto;
+  display: none;
 }
 
 .info-con {
-    display: none;
-    background: var(--skole-info-con);
+  display: none;
+  background: var(--skole-info-con);
+  color: #000;
+  border-bottom: 1px solid var(--skole-border);
+  overflow: hidden;
+
+  label {
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+    height: 30px;
+    border-color: var(--skole-border);
+  }
+
+  input[type="submit"] {
+    background: #0f2027;
+    color: #fff;
+    box-shadow: none;
+    line-height: 12px;
+  }
+
+  a {
     color: #000;
-    border-bottom: 1px solid var(--skole-border);
-    overflow: hidden;
 
-    label {
-        opacity: .8;
-        margin: 0;
+    &:hover {
+      color: #000;
     }
-
-    input[type=text],
-    input[type=submit] {
-        height: 30px;
-        border-color: var(--skole-border);
-    }
-
-    input[type=submit] {
-        background: #0f2027;
-        color: #fff;
-        box-shadow: none;
-        line-height: 12px;
-    }
-
-
-    a {
-        color: #000;
-
-        &:hover {
-            color: #000;
-        }
-    }
+  }
 }
 
 .slide-con {
-    padding: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-flow: column;
-    font-size: .9rem;
-    background: #fff;
-    a {
-        text-decoration: none;
-    }
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-flow: column;
+  font-size: 0.9rem;
+  background: #fff;
+  a {
+    text-decoration: none;
+  }
 }
 @media (min-width: 1025px) {
-    .slide-con {
-        flex-flow: row;
-        align-items: center;
-    }
+  .slide-con {
+    flex-flow: row;
+    align-items: center;
+  }
 }
 
 .bar-icons {
-    display: flex;
-    align-items: center;
-      gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 
+  svg {
+    cursor: pointer;
+    fill: #ffffff;
+  }
+
+  .open {
     svg {
-        cursor: pointer;
-        fill: #ffffff;
+      animation: dance 1s infinite alternate;
     }
-
-    .open {
-        svg {
-            animation: dance 1s infinite alternate;
-        }
-    }
+  }
 }
 .extra-icons {
-    display: none;
-} 
+  display: none;
+}
 
 .info-item {
-    display: flex;
-    align-items: center;
-    gap: 1ch;
-    line-height: 1;
-    border-right: 1px solid var(--skole-border);
-        padding-right: 1rem;
-    &:last-of-type {
-        border-right: none;
-        padding-right: none;
-    }
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+  line-height: 1;
+  border-right: 1px solid var(--skole-border);
+  padding-right: 1rem;
+  &:last-of-type {
+    border-right: none;
+    padding-right: none;
+  }
 }
 
 @media (min-width: 600px) {
-    .skole-intra {
-
-        a {
-
-            span {
-                display: inline;
-            }
-        }
+  .skole-intra {
+    a {
+      span {
+        display: inline;
+      }
     }
-
+  }
 }
 
 @media (min-width: 800px) {
-    .skole-some {
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-    }
-    .extra-icons {
-        display: flex;
-    }
+  .skole-some {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .extra-icons {
+    display: flex;
+  }
 }
 
 .skole-filer {
-    a {
-        &:after {
-            content: ',';
-            display: inline-block;
-            margin-right: 1ch;
-        }
-
-        &:last-of-type {
-            &:after {
-                display: none;
-            }
-        }
+  a {
+    &:after {
+      content: ",";
+      display: inline-block;
+      margin-right: 1ch;
     }
-}
 
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
 
 @keyframes dance {
-    0% {
-        fill: #ffffff
-    }
+  0% {
+    fill: #ffffff;
+  }
 
-
-
-    100% {
-        fill: #506a73;
-    }
+  100% {
+    fill: #506a73;
+  }
 }
 
 .skole-besked-con {
-    h2 {
-        margin-top: 0;
-    }
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .skole-besked-con {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.skole-billede {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  img {
+    width: 100%;
+  }
 }

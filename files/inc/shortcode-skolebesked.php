@@ -55,19 +55,11 @@ function skole_besked($atts) {
 
 		if ($images):
 
-			if (count($images) <= 2) {
-				$cl = ' g-d-1 ';
-			} elseif (count($images) <= 4) {
-			$cl = ' g-d-2 ';
-		} else {
-			$cl = ' g-d-3 ';
-		}
-
-		echo '<div class="skole-billede grid' . $cl . 'gap-1">';
+		echo '<div class="skole-billede">';
 		foreach ($images as $image):
 
 			echo '<a href="' . esc_url($image['url']) . '" class="lightbox-link">';
-			echo '<img src="' . esc_url($image['sizes']['large']) . '" alt="' . esc_attr($image['alt']) . '" />';
+			echo '<img src="' . esc_url($image['sizes']['thumbnail']) . '" alt="' . esc_attr($image['alt']) . '" width="' . $image['sizes']['thumbnail-width'] . '" height="' . $image['sizes']['thumbnail-height'] . '">';
 			echo '</a>';
 
 		endforeach;
