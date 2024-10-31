@@ -15,13 +15,13 @@ function skole_top_bar() {
 	if ($elev || $foraeldre || $personale) {
 		echo '<nav class="skole-intra">';
 		if ($elev) {
-			echo '<a href="' . $elev . '" target="_blank" title="Loginside - ElevIntra">' . intra_icon() . 'E<span>lev</span></a>';
+			echo '<a href="' . $elev . '" target="_blank" title="Loginside - ElevIntra">' . intra_icon() . 'E<span>levIntra</span></a>';
 		}
 		if ($foraeldre) {
-			echo '<a href="' . $foraeldre . '" target="_blank" title="Loginside - ForældreIntra">' . intra_icon() . 'F<span>orældre</span></a>';
+			echo '<a href="' . $foraeldre . '" target="_blank" title="Loginside - ForældreIntra">' . intra_icon() . 'F<span>orældreIntra</span></a>';
 		}
 		if ($personale) {
-			echo '<a href="' . $personale . '" target="_blank" title="Loginside - PersonaleIntra">' . intra_icon() . 'P<span>ersonale</span></a>';
+			echo '<a href="' . $personale . '" target="_blank" title="Loginside - PersonaleIntra">' . intra_icon() . 'P<span>ersonaleIntra</span></a>';
 		}
 		echo '</nav>';
 	}
