@@ -33,10 +33,12 @@ function skole_begivenhed($atts) {
 			}
 
 			$sub_billede = get_sub_field('billede');
+			if ($sub_billede) {
 			$size = 'thumbnail';
 			$thumb = $sub_billede['sizes'][$size];
 			$width = $sub_billede['sizes'][$size . '-width'];
 			$height = $sub_billede['sizes'][$size . '-height'];
+			}
 
 			echo '<div class="begivenhed">';
 			if ($sub_overskrift):

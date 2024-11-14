@@ -30,7 +30,7 @@ acf_add_local_field_group(array(
 			'label' => 'Stor',
 			'name' => 'skole_besked_stor',
 			'aria-label' => '',
-			'type' => 'textarea',
+			'type' => 'text',
 			'instructions' => 'Stor og tydelig besked på forsiden.',
 			'required' => 0,
 			'conditional_logic' => 0,
