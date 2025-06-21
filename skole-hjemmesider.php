@@ -39,6 +39,7 @@ if( class_exists('ACF') ) {
 	require_once ('files/filer/acf.php');
 	require_once ('files/filer/function.php');
 	require_once ('files/filer/shortcode-type.php');
+	require_once ('files/filer/shortcode-type-all.php');
 	require_once ('files/filer/shortcode-kl-type.php');
 	require_once ('files/filer/shortcode-aargang-type.php');
 	require_once ('files/filer/shortcode-alle-klasse.php');

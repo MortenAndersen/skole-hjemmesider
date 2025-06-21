@@ -4,14 +4,15 @@
 }
 
 .skole-bar {
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   gap: 1.5rem;
   background: #0f2027;
   color: #fff;
   border-bottom: 1px solid #506a73;
   line-height: 1;
-
+  font-size: 0.9rem;
+  font-weight: 300;
   svg {
     height: 20px;
   }
